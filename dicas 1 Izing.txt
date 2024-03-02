@@ -1,0 +1,29 @@
+✅ Izing ​Passaporte ZDG + Instalador Automático
+
+​​​​​​​​​​​​🔴 É PROIBIDO COMPARTLIHAR ESSA PASTA EM QUALQUER GRUPO, INCLUSIVE NO GRUPO DE ALUNOS. CASO ISSO OCORRA SE ACESSO SERÁ REMOVIDO!
+
+⚠️ INSTRUÇÕES
+
+O.S.: UBUNTU 20.04 (LTS)
+
+sudo chmod +x ./izing_passaporte_shell/izing
+
+cd ./izing_passaporte_shell
+
+sudo ./izing
+
+CRIAR 2 SUBDOMINIOS E APONTAR PARA O IP DA SUA VPS
+
+FRONTEND_URL: frontizing.comunidadezdg.com.br
+
+BACKEND_URL:  backizing.comunidadezdg.com.br
+
+https://dnschecker.org/
+
+
+usuario
+
+admin@izing.io
+senha:123456
+
+VUE framework com javascript criado pelu durans dev BR
