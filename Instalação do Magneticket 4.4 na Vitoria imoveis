@@ -1,4 +1,4 @@
-﻿Instalação 09/06/2023 ACI VItoria imoveis
+﻿Instalação 09/06/2023 Imobiliaria
 
 24/06/2023
 OBS na versão 4.5 temos dois arquivos zip a serem gerados 
@@ -32,9 +32,9 @@ USUÀRIO:ALTERE
 EXEMPLO da alteração no arquivo de config
 
 
-deploy_password=Hj5gx9Adriel=
-mysql_root_password=Hj5gx9Adriel=
-db_pass=A!2756a@Mag=
+deploy_password=SUA-SENHA-AQUI=
+mysql_root_password=SUA-SENHA-AQUI=
+db_pass=SUA-SENHA-DOBANCO=
 jwt_secret=3123123213123
 jwt_refresh_secret=75756756756
 deploy_email=deploy@comunidadezdg.com.br
@@ -567,11 +567,11 @@ _app.sh ( senhas do banco)
 jwt_secret=3123123213123
 jwt_refresh_secret=75756756756
 
-deploy_password=Hj5gx9Adriel=
+deploy_password=SUA-SENHA-AQUI=
 
 #mysql_root_password=$(openssl rand -base64 32)
 
-db_pass=A!2756a@Mag
+db_pass=SUA-SENHA-DOBANCO=
 
 db_user=root
 db_name=whaticket
@@ -633,9 +633,9 @@ print_banner() {
 #######################################################
 config
 
-deploy_password=Hj5gx9Adriel=
+deploy_password=SUA-SENHA-AQUI=
 mysql_root_password=ZdG/hjmYbzuSd9mHPXnSxrgZ8CoTxepahoPy4BjW+5MQtJg=
-db_pass=A!2756a@Mag=                                   ( A SENHA AQUI VAI ATE o "=" portanto é..)
+db_pass=SUA-SENHA-DOBANCO=                          ( A SENHA AQUI VAI ATE o "=" portanto é..)
 jwt_secret=3123123213123
 jwt_refresh_secret=75756756756
 deploy_email=deploy@comunidadezdg.com.br
@@ -929,7 +929,7 @@ rebuildar o frontend apos isso
 ####################################################################
 Por segurança devemos trocar a senha do "admin"
 padrão do Whaticket admin@whaticket.com de dentro do sistema web. para senha da magnetron padrão 
-A!2756a@Mag
+=SUA-SENHA-DOBANCO=
 
 ####################################################################
 
