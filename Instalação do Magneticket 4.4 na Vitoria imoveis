@@ -1,0 +1,1003 @@
+﻿Instalação 09/06/2023 ACI VItoria imoveis
+
+24/06/2023
+OBS na versão 4.5 temos dois arquivos zip a serem gerados 
+um whaticket.zip com os front e back e outro zip completo contendo tudo .
+
+
+sudo timedatectl set-timezone America/Sao_Paulo
+sudo apt-get update
+IPI da VPS 66.94.99.203  trocado para 164.68.105.162
+arquivo base Magneticket.4.4/whaticket
+
+MAGNETRON TELECOMUNICAÇÔES\MAGNETICKET\PASSAPORTE\magneticket_shell.4.2
+Copiando todos arquivos para /root
+lib
+utils
+variables
+whaticket_setup_01maio2023
+banner script
+config
+DbHelper
+LICENSE
+package
+README
+whaticket
+whaticket.zip
+
+ATENÇÂO SE ALTERAMOS PASWORD VAMOS PRECISAR IR NO .CONFIG
+MYSQL:ALTERE
+USUÀRIO:ALTERE
+
+EXEMPLO da alteração no arquivo de config
+
+
+deploy_password=Hj5gx9Adriel=
+mysql_root_password=Hj5gx9Adriel=
+db_pass=A!2756a@Mag=
+jwt_secret=3123123213123
+jwt_refresh_secret=75756756756
+deploy_email=deploy@comunidadezdg.com.br
+db_user=root
+db_name=magneticket     ###########Para cada instancia deve se ter um nome de banco diferente######
+
+README   alterado para os meus dominios*
+ 
+SUBINDO FTP
+
+DESCOMPACTE
+USE OS ARQUIVOS 
+
+sudo apt-get install zip unzip
+
+unzip whaticket.zip
+
+##################
+colocando arquivo whaticket_setup_01maio2023.zip (versão alterada pelo dev) para chamar whaticket.zip devido o script
+
+mv whaticket_setup_01maio2023.zip whaticket.zip
+
+whaticket.4.4 (pasta)  (para instalação da primeira instancia) ESTE È O DO MOMENTO...
+
+⚠️ API NÃO OFICIAL DO INSTAGRAM ESTÁ INSTÁVEL (ALGUNS BLOQUEIOS DO MECANISMO ANTI-SPAM DO IG)
+
+⚠️ INSTRUÇÕES
+
+O.S.: UBUNTU 18.04 OU 20.04 (LTS)
+
+Na primeira INSTANCIA
+
+sudo chmod +x Magneticket.4.4/whaticket
+
+Ou de todas as pastas e arqvuidos dentro
+
+cd ./magneticket4.4
+
+sudo ./whaticket
+
+CRIAR 4 SUBDOMINIOS E APONTAR PARA O IP DA SUA VPS
+
+SUB 1: FRONTEND DO WHATICKET > vitoriaimoveisapp.magnetrontelecom.com.br
+
+SUB 2: BACKEND DO WHATICKET > vitoriaimoveisapi.magnetrontelecom.com.br
+
+SUB 3: FRONTEND DO CHATBOT > appchatbot5.magnetrontelecom.com.br
+
+SUB 4: BACKEND DO CHATBOT > apichatbot5.magnetrontelecom.com.br
+
+https://dnschecker.org/
+
+
+EXECUTE O instalavel apos propagar o DNS e crie as portas diferentes da instalação anterior ex 443, 3333 , 8080
+
+
+PORTAS SUGERIDAS 
+FRONT 3355
+BACK 8155
+FRONTCHAT 3755
+BACKCHAT 9155
+
+nome da pasta  wtpass2
+nome do banco wtpass2
+
+README abaixo alterado
+
+acessando whaticket_passaporte_shell/lib/_backend_chatbot.sh
+
+para alterar 
+
+# LIGAR => ok | DESLIGAR => off
+CHATBOT_DEFAULT=ok
+DIALOGFLOW_DEFAULT=ok
+DIALOGFLOWAUDIO_DEFAULT=off
+N8N_DEFAULT=off
+GRUPO_DEFAULT=ok
+WHATSAPP_AGENDAMENTO_DEFAULT=off
+AGENDAMENTO_AUTOMATICO_DEFAULT=ok
+
+no _backend_chatbot.sh
+
+# LIGAR => on | DESLIGAR => off
+DIALOG_FLOW_STATUS=on
+GROUPS=on
+N8N=off
+
+
+
+
+==================================================================
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##```````````````````````.,_____________````````````````````````##
+##````````````````````;=YYYYY===========````````````````````````##
+##``````````````````;=YYYYYYY===========````````````````````````##
+##`````````````````_YYYYYIY=============````````````````````````##
+##````````````````_YYYYI~~``````````v===`````;``````````````````##
+##```````````````>YYYj:`````````````v===````?I=,````````````````##
+##```````````````[YYI````_vvxxxxxxxxx===````III~````````````````##
+##``````````````_jYI:``_YYYYY===========```_YII`````````````````##
+##``````````````IYY(``>YYYYYY===========```YYY(`````````````````##
+##``````````````YYY'``jYYI+^^^^^^^^^^^^^``?YYI``````````````````##
+##``````````````YYI``>YYI:````````````````YYYI____;`````````````##
+##`````````````"YY=``IYY(````````````````}YYYYYYYYi`````````````##
+##`````````````"YYj``=YY(````````````````YYYYYYYYI~`````````````##
+##`````````````"YYl``IYYl```````````````>=====YYY+``````````````##
+##`````````````vYYY``"YYYl,,,,,,,,,,,,,,`````>YYI'``````````````##
+##`````````````~jYY(``YYYYYYYYYYY=======`````[YY+```````````````##
+##``````````````YYYI``~YYYYYYYYYY=======````>YYY'```````````````##
+##``````````````"YYYi``~+?YYYYYYY=======````IIY!````````````````##
+##```````````````?YYY(```~``````````v===```"III'````````````````##
+##```````````````~VYYY+,````````````v===`````?l`````````````````##
+##````````````````~=YYYY=____________===````````````````````````##
+##`````````````````~?YYYYYYYYYY=========````````````````````````##
+##````````````````````YYYYYYYY==========````````````````````````##
+##````````````````````~`^+?+++++++++++++````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+##``````````````````````````````````````````````````````````````##
+                                                ##
+##  ██████████████████████████████████████████  ##
+##                                              ##
+##  ███       ███ ████  ██ ███████ █████   ██    ##
+##  ████     ████ █████ ██ ███████ ██      ██    ##
+##  ██ ██   ██ ██ ██ ██ ██    ██   █████   ██    ##
+##  ██  ██ ██  ██ ██  ████    ██   ██      ██    ##
+##  ██   ███   ██ ██   ███    ██   █████   ████  ##
+##                                              ## 
+##  ██████████████████████████████████████████  ##
+##                                              ##
+##  ESSE MATERIAL FAZ PARTE DA MAGNETRON        ##
+##            TELECOMUNICAÇÔES                  ##
+##                                              ##
+##        PIRATEAR ESSA SOLUÇÃO É CRIME.        ##
+##                                              ##
+## ©MAGNETRON TELECOM - magnetrontelecom.com.br ##
+##                                              ##
+===================================================
+
+## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS ##
+
+SUB 1: FRONTEND DO WHATICKET > appwhaticket2.comunidadezdg.com.br
+SUB 2: BACKEND DO WHATICKET > apiwhaticket2.comunidadezdg.com.br
+SUB 3: FRONTEND DO CHATBOT > appchatbot2.comunidadezdg.com.br
+SUB 4: BACKEND DO CHATBOT > apichatbot2.comunidadezdg.com.br
+
+## CHECAR PROPAGAÇÃO DO DOMÍNIO ##
+
+https://dnschecker.org/
+
+## COPIAR A PASTA PARA ROOT E RODAR OS COMANDOS ABAIXO ##
+
+sudo chmod +x ./whaticket_passaporte_shell_2/whaticket
+cd ./whaticket_passaporte_shell_2
+sudo ./whaticket
+
+
+===================================================
+
+## APÓS A INSTALAÇÃO ##
+
+## INSTALAR O CHROME (CASO VOCÊ RECEBA ERRO NA HORA DE COLAR A SENHA DO DEPLOYZDG / RECEBA ERRO NO QRCODE)
+sudo su deployzdg
+cd ~
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
+pm2 restart 0
+
+## ATIVAR FIREWALL ##
+
+sudo ufw enable
+y
+enter
+
+================================================
+
+## MANUAL
+## INSTALAR O WHATICKET
+
+sudo apt update
+sudo apt upgrade
+sudo su root
+cd ~
+apt install mysql-server
+mysql --version
+sudo systemctl status mysql
+sudo mysql -u root
+
+mysql> CREATE DATABASE whaticket CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+mysql> USE mysql;
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+
+service mysql restart
+sudo su root
+adduser deployzdg
+usermod -aG sudo deployzdg
+su deployzdg
+sudo apt update && sudo apt upgrade
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt update
+sudo usermod -aG mysql ${USER}
+su - ${USER}
+cd ~
+conectar com o usuario deployzdg e enviar a pasta via ftp
+sudo apt install unzip
+unzip whaticket.zip
+cp whaticket/backend/.env.example whaticket/backend/.env
+nano whaticket/backend/.env
+
+NODE_ENV=
+BACKEND_URL=https://api.atendimento.converteja.com.br
+FRONTEND_URL=https://atendimento.converteja.com.br
+PROXY_PORT=443
+PORT=8080
+CHROME_BIN=/usr/bin/google-chrome-stable
+DIALOG_FLOW_JSON=zdg-9un9-0aba54d6e44c.json
+DIALOG_FLOW_PROJECT_ID=zdg-9un9
+DIALOG_FLOW_LANGUAGE=pt-br
+DIALOG_FLOW_STATUS=off
+VONAGE_APIKEY=4542a449
+VONAGE_APISECRET=Tb2yD2lq9y6kP0Dg
+VONAGE_APPLICATIONID=d72e7e96-2f75-46a3-8e13-e11b9d239856
+GROUPS=off
+EMAIL_SERVICE=gmail
+EMAIL_USER=zdgads@gmail.com
+EMAIL_PASS=enousbucwhhkkiyx
+EMAIL_FROM=zdgads@gmail.com
+EMAIL_TO=zapdasgalaxias@gmail.com
+N8N=off
+N8N_WEBHOOK=https://jqaur1m11ongj279cq9g0hes.hooks.n8n.cloud/webhook/549feb55-7df0-4f7e-a8e6-2eefd0c3551a
+
+DB_DIALECT=mysql
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=whaticket
+
+JWT_SECRET=3123123213123
+JWT_REFRESH_SECRET=75756756756
+
+sudo apt-get install -y libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+cd whaticket/backend
+npm install
+npx sequelize db:migrate
+npx sequelize db:seed:all
+sudo npm install -g pm2
+pm2 start dist/server.js --name whaticket-backend
+pm2 startup ubuntu -u deployzdg
+sudo env PATH=$PATH:/usr/bin pm2 startup ubuntu -u deployzdg --hp /home/deployzdg
+cd ../frontend
+npm install --force
+nano .env
+
+REACT_APP_BACKEND_URL = https://api.atendimento.converteja.com.br
+PORT=3003
+
+npm run build
+pm2 start server.js --name whaticket-frontend
+pm2 save
+pm2 list
+
+sudo apt install nginx
+sudo rm /etc/nginx/sites-enabled/default
+sudo nano /etc/nginx/sites-available/wt-frontend
+
+server {
+  server_name atendimento.converteja.com.br;
+
+  location / {
+    proxy_pass http://127.0.0.1:3333;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_cache_bypass $http_upgrade;
+  }
+  }
+sudo cp /etc/nginx/sites-available/wt-frontend /etc/nginx/sites-available/wt-backend
+sudo nano /etc/nginx/sites-available/wt-backend
+
+server {
+  server_name api.atendimento.converteja.com.br;
+
+  location / {
+    proxy_pass http://127.0.0.1:8080;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_cache_bypass $http_upgrade;
+  }
+  }
+  
+cd /etc/nginx/sites-available/
+ls
+sudo ln -s /etc/nginx/sites-available/wt-frontend /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/wt-backend /etc/nginx/sites-enabled
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/nginx.conf
+
+client_max_body_size 50M; 
+# HANDLE BIGGER UPLOADS
+ 
+sudo nginx -t
+sudo service nginx restart
+sudo apt-get install snapd
+sudo snap install notes
+
+sudo snap install --classic certbot
+sudo certbot --nginx
+
+==============================================================
+
+## INSTALAR O MÓDULO DE CHATBOT
+
+cd ~
+cd whaticket
+cd backend-chatbot
+npm install
+pm2 start npm --name chatbot-backend -- start
+
+cd ../frontend-chatbot
+npm install
+nano .env
+REACT_APP_BACKEND_URL = https://api.chatbot.converteja.com.br
+pm2 start npm --name chatbot-frontend -- start
+
+pm2 save
+pm2 list
+sudo nano /etc/nginx/sites-available/chatbotwt-frontend
+
+server {
+  server_name chatbot.converteja.com.br;
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_cache_bypass $http_upgrade;
+  }
+   }
+   
+sudo cp /etc/nginx/sites-available/chatbotwt-frontend /etc/nginx/sites-available/chatbotwt-backend
+sudo nano /etc/nginx/sites-available/chatbotwt-backend
+
+server {
+  server_name api.chatbot.converteja.com.br;
+
+  location / {
+    proxy_pass http://127.0.0.1:8081;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_cache_bypass $http_upgrade;
+  }
+  }
+  
+cd /etc/nginx/sites-available/
+ls
+sudo ln -s /etc/nginx/sites-available/chatbotwt-frontend /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/chatbotwt-backend /etc/nginx/sites-enabled
+sudo nginx -t
+sudo service nginx restart
+sudo certbot --nginx
+
+==============================================================
+
+
+ERRO
+
+
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Error while running nginx -c /etc/nginx/nginx.conf -t.
+
+nginx: [emerg] "client_max_body_size" directive is duplicate in /etc/nginx/conf.d/whaticket.conf:1
+nginx: configuration file /etc/nginx/nginx.conf test failed
+
+The nginx plugin is not working; there may be problems with your existing configuration.
+The error was: MisconfigurationError('Error while running nginx -c /etc/nginx/nginx.conf -t.\n\nnginx: [emerg] "client_max_body_size" directive is duplicate in /etc/nginx/conf.d/whaticket.conf:1\nnginx: configuration file /etc/nginx/nginx.conf test failed\n')
+
+
+COMENTADO 
+
+script /lib/_system.sh
+
+APOS TERMINA 
+
+admin@whaticket.com.br
+admin
+
+
+DOMINIOS Da SEGUNDA INSTANCIA
+
+CRIAR 4 SUBDOMINIOS E APONTAR PARA O IP DA SUA VPS
+
+SUB 1: FRONTEND DO WHATICKET > appwhaticket3.magnetrontelecom.com.br
+
+SUB 2: BACKEND DO WHATICKET > apiwhaticket3.magnetrontelecom.com.br
+
+SUB 3: FRONTEND DO CHATBOT > appchatbot3.magnetrontelecom.com.br
+
+SUB 4: BACKEND DO CHATBOT > apichatbot3.magnetrontelecom.com.br
+
+https://dnschecker.org/
+
+PORTAS SUGERIDAS +2 anterior
+FRONT 3357
+BACK 8157
+FRONTCHAT 3757
+BACKCHAT 9157
+
+nome do banoo magneticket e pasta magneticket2
+Instalação sem usuario deployzdg no .config
+
+OBS banco não conecta pois bancos devem ter nomes diferetes da primeira instalação para segunda
+exemplo o primeiro é dbname magneticket o eugndo magneticket2 e assimvai
+
+
+DOMINIOS Da SEGUNDA INSTANCIA
+
+CRIAR 4 SUBDOMINIOS E APONTAR PARA O IP DA SUA VPS
+
+SUB 1: FRONTEND DO WHATICKET > appwhaticket4.magnetrontelecom.com.br
+
+SUB 2: BACKEND DO WHATICKET > apiwhaticket4.magnetrontelecom.com.br
+
+SUB 3: FRONTEND DO CHATBOT > appchatbot4.magnetrontelecom.com.br
+
+SUB 4: BACKEND DO CHATBOT > apichatbot4.magnetrontelecom.com.br
+
+https://dnschecker.org/
+
+PORTAS SUGERIDAS +2 anterior
+FRONT 3359
+BACK 8159
+FRONTCHAT 3759
+BACKCHAT 9159
+
+usuario root no .config com sudo ./whaticket 
+#########nome do banco e pasta diferentes magneticket4.1#####3333
+
+
+#################CUSTOMIZAÇÂO DO INSTALADOR    magneticket_shell.4.2  #########################  
+
+PASTA com executavel
+magneticket_shell.4.2
+
+alterado arquivos e textos do script de instalação e escrita do log 
+arquivo de licença
+
+             ©MAGNETRON TELECOMunicações - magnetrontelecom.com.br
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. To use it, you need to buy your license
+
+###############################################33
+README
+===================================================
+##                                              ##
+##  ██████████████████████████████████████████  ##
+##                                              ##
+##  ███       ███ ████  ██ ███████ █████  ██    ##
+##  ████     ████ █████ ██ ███████ ██     ██    ##
+##  ██ ██   ██ ██ ██ ██ ██    ██   █████  ██    ##
+##  ██  ██ ██  ██ ██  ████    ██   ██     ██    ##
+##  ██   ███   ██ ██   ███    ██   █████  ████  ##
+##                                              ## 
+##  ██████████████████████████████████████████  ##
+##                                              ##
+##    ESSE MATERIAL FAZ PARTE DA MAGNETRON      ##
+##            TELECOMUNICAÇÔES                  ##
+##                                              ##
+##        PIRATEAR ESSA SOLUÇÃO É CRIME.        ##
+##                                              ##
+## ©MAGNETRON TELECOM - magnetrontelecom.com.br ##
+##                                              ##
+===================================================
+
+## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS ##
+
+SUB 1: FRONTEND DO WHATICKET > appwhaticket.magnetrontelecom.com.br
+SUB 2: BACKEND DO WHATICKET > apiwhaticket.magnetrontelecom.com.br
+SUB 3: FRONTEND DO CHATBOT > appchatbot.magnetrontelecom.com.br
+SUB 4: BACKEND DO CHATBOT > apichatbot.magnetrontelecom.com.br
+
+## CHECAR PROPAGAÇÃO DO DOMÍNIO ##
+
+https://dnschecker.org/
+
+#######################################################3
+_app.sh ( senhas do banco)
+#!/bin/bash
+#
+# Variables to be used for background styling.
+
+# app variables
+
+jwt_secret=3123123213123
+jwt_refresh_secret=75756756756
+
+deploy_password=Hj5gx9Adriel=
+
+#mysql_root_password=$(openssl rand -base64 32)
+
+db_pass=A!2756a@Mag
+
+db_user=root
+db_name=whaticket
+
+deploy_email=deploy@whaticket.com
+
+
+############################################################33
+Banner.sh
+
+#!/bin/bash
+#
+# Print banner art.
+
+#######################################
+# Print a board. 
+# Globals:
+#   BG_BROWN
+#   NC
+#   WHITE
+#   CYAN_LIGHT
+#   RED
+#   GREEN
+#   YELLOW
+# Arguments:
+#   None
+#######################################
+print_banner() {
+
+  clear
+
+  printf "\n\n"
+
+  printf "${GREEN}";
+  printf "  ██████████████████████████████████████████   \n";
+  printf "                                               \n";
+  printf "  ███       ███ ████  ██ ███████ █████  ██     \n";
+  printf "  ████     ████ █████ ██ ███████ ██     ██     \n";
+  printf "  ██ ██   ██ ██ ██ ██ ██    ██   █████  ██     \n";
+  printf "  ██  ██ ██  ██ ██  ████    ██   ██     ██     \n";
+  printf "  ██   ███   ██ ██   ███    ██   █████  ████   \n";
+  printf "                                               \n";
+  printf "  ██████████████████████████████████████████   \n";
+  printf "    ESSE MATERIAL FAZ PARTE DA MAGNETRON       \n";
+  printf "           TELECOMUNICAÇÔES                    \n";
+  printf "Compartilhar, vender ou fornecer essa solução  \n";
+  printf "sem autorização é crime previsto no artigo 184 \n";
+  printf "do código penal que descreve a conduta criminosa\n";
+  printf "de infringir os direitos autorais da Magnetron \n": 
+  printf "           Telecomunicações.                   \n";
+  printf "                                               \n";
+  printf "       PIRATEAR ESSA SOLUÇÃO É CRIME.          \n";
+  printf "                                               \n";
+  printf "  ©MAGNETRON TELECOM - magnetrontelecom.com.br \n";
+  printf "${NC}";
+
+  printf "\n"
+}
+#######################################################
+config
+
+deploy_password=Hj5gx9Adriel=
+mysql_root_password=ZdG/hjmYbzuSd9mHPXnSxrgZ8CoTxepahoPy4BjW+5MQtJg=
+db_pass=A!2756a@Mag=                                   ( A SENHA AQUI VAI ATE o "=" portanto é..)
+jwt_secret=3123123213123
+jwt_refresh_secret=75756756756
+deploy_email=deploy@comunidadezdg.com.br
+db_user=root
+db_name=whaticket
+
+###########################################################
+
+
+
+OBS:
+OS ARQUIVOS BASE do GIT HUB ESTAO DENTRO DO DIRETORIO PRINCIPAL
+
+
+ALTERAÇÔES
+magneticket_shell.4.2\TEMPORARIA\whaticket\frontend\public
+manifest.json
+
+"short_name": "MagneTicket",
+	"name": "MagneTicket",
+	"icons": [
+		{
+
+
+###################################################333
+D:\Magnetron\MAGNETICKET\Passaporte\magneticket_shell.4.2\TEMPORARIA\whaticket\frontend\.env
+.env
+REACT_APP_BACKEND_URL = http://localhost:8080/
+REACT_APP_TITLE = Magneticket
+
+######################################################
+
+ALTERA TITULO DAS PAGINAS EM:
+magneticket_shell.4.2\TEMPORARIA\whaticket\frontend\public\index.html
+
+#######################################################
+biblioteca material UI  
+https://v4.mui.com/pt/components/material-icons/
+linguagem  React
+
+LOGIN
+
+/home/deployzdg/whaticket/frontend/src/pages/Login
+
+importa o icone na biblioteca
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
+chama em "return"
+
+salva
+
+######################################################
+
+no fronend tem .env  com REACT_APP_TITLE = "Comunidade ZDG"
+
+onde preicsa ser alterado
+
+###################################################### SUDO SU DEPLOYZDG
+
+
+Acessar com sudo su deployzdg para debug apos instalar com instalador.
+
+Att;
+
+########################################################3
+alterando link do frontend-chatbot da comu zdg para site da magntorn
+
+/home/deployzdg/whaticket/frontend-chatbot/src/App.js
+
+https://xn--magnetrontelecomunicaes-ibc46a.com.br/
+
+
+#####################################################333
+
+biblioteca material UI  
+https://v4.mui.com/pt/components/material-icons/
+linguagem  React
+
+===========
+LOGIN
+
+/home/deployzdg/whaticket/frontend/src/pages/Login
+
+importa o icone na biblioteca
+
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
+chama em "return"
+
+salva
+
+
+
+todos textos serao trocados no Transçate PT
+
+/home/deployzdg/whaticket/frontend/src/translate/languages/pt.js
+
+
+Alterar PAGINAS
+
+"grids"
+
+/home/deployzdg/whaticket/frontend/src/pages/Tickets
+
+alterado height de 100% para 80 e ..
+
+#################################################################
+TROCAR NOME DO PROGRMAA
+
+/home/deployzdg/whaticket/frontend/src/layout index.js
+
+alterar para Magneticket
+ESC set nu
+pag 220
+
+############################################################
+
+RETIRAR BOTOÔES DO MYSQL DIALOGFLOW ETC.. PARA TODOS
+
+
+Sumir com a barra de DialogFlow, DialogFlowAudio, MYSQL e N8N
+/home/deployzdg/whaticket/frontend/src/components/Ticket/index.js
+Digita Esc
+:set nu
+linha 511 -> troque o "flex" para "none", 
+
+Esconde a barra de id wpp, limite, importar conversas, csv, email
+/home/deployzdg/whaticket/frontend/src/components/MessagesList/index.js
+
+colocar display: none na linha 803
+
+###############################################################3
+REtirando opções do Menu lateral
+
+BARRA LATERAL
+
+/home/deployzdg/whaticket/frontend/src/layout/MainListItems.js
+
+Retirar botões do menu lateral:
+*chamada telefônica
+*sms
+*direct
+*instagram
+*mídia url
+*mídia path
+
+apagados por exemplo.
+
+<ListItemLink
+              to="/SMS"
+              primary={i18n.t("mainDrawer.listItems.ZDGChatbot")}
+        icon={<ChatIcon />}
+      />
+	 
+	            <ListItemLink
+              to="/ZDGChatbot"
+              primary={i18n.t("mainDrawer.listItems.ZDGChatbot")}
+        icon={<ChatIcon />}
+            />
+##################################################################
+	  BANCO DE DADOS Mysql
+	  
+	  ######################################################################
+ALTERADNO TICKETS DE STATUS AGUARANDO PARA RESOLVIDOS NO MAGNETICKET
+######################################################################
+
+sudo mysql -u root
+
+mysql> USE whaticket;
+
+mysql> Describe Tickets;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| id             | int          | NO   | PRI | NULL    | auto_increment |
+| status         | varchar(255) | NO   |     | pending |                |
+| lastMessage    | text         | YES  |     | NULL    |                |
+| contactId      | int          | YES  | MUL | NULL    |                |
+| userId         | int          | YES  | MUL | NULL    |                |
+| createdAt      | datetime(6)  | NO   |     | NULL    |                |
+| updatedAt      | datetime(6)  | NO   |     | NULL    |                |
+| whatsappId     | int          | YES  | MUL | NULL    |                |
+| isGroup        | tinyint(1)   | NO   |     | 0       |                |
+| unreadMessages | int          | YES  |     | NULL    |                |
+| queueId        | int          | YES  | MUL | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+11 rows in set (0.01 sec)
+
+
+obs o status 
+pode ser closed ou open ou pending
+
+SELECT * FROM Tickets WHERE status = 'closed';
+SELECT * FROM Tickets WHERE status = 'pending';
+SELECT * FROM Tickets WHERE lastMessage like '%Margareth%';
+
+| id   | status | lastMessage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | contactId | userId | createdAt                  | updatedAt                  | whatsappId | isGroup | unreadMessages | queueId |
++------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+----------------------------+----------------------------+------------+---------+----------------+---------+
+| 1396 | closed | *Valeriano Fernandes :*
+Bom dia dona Margareth, tudo bem com você? Espero que sim.
+Sou o Valeriano Fernandes, agente de registro da PIX - Certificadora Digital.
+
+
+SELECT COM id
+SELECT * FROM Tickets WHERE id like '%1396%';
+
+por DATA
+
+SELECT * FROM Tickets WHERE createdAt >'2023-05-31 11:08:00';
+
+
+contando as linhas...
+
+select status = 'closed' FROM Tickets  nome is null; 
+
+SELECT COUNT(1) FROM Tickets WHERE status ="pending";
+
+#####################################################################3
+
+ UPDATE Tickets SET status= 'closed'  WHERE  id like '%1306%';
+ 
+
+mysql> UPDATE Tickets SET status= 'closed'  WHERE  status='pending';
+
+
+mysql> FLUSH PRIVILEGES;
+
+mysql> exit;
+
+service mysql restart
+
+#########################################################################3
+
+Customizações do frontend
+
+npm run build
+	
+pm2 save
+pm2 list
+
+sudo nginx -t
+sudo service nginx restart
+
+######################################################################################
+CORREÇÂO DO BUG DOS TICKETS SENDO ENCERRADOS AO TRANSFERIR
+
+
+Já sim.. tem q remover o fechamento automático do uso da api. No backend  
+
+/home/deployzdg/whaticket/backend/dist/services/WbotServices
+
+
+Tem o SendWhatsappMessage2
+
+
+Só comentar ali o procedimento que tá dentro do delay de 5s
+
+   /*         const ticketId = await db.getContactId(number.replace(/\D/g,''));
+            await db.setTicketClosed(ticketId); */
+
+Vai no Backend stop e start depois aguarda reconectar a conta de Qrcode e testa a transferencia direto para o usuário juntamente com a fila.
+
+######################################################################################
+	
+ALTERAR A MENSAGEM DE FORA DO HORARIO DE EXPEDIENTE PADRÂO
+
+no backend
+
+acessando dist/libs/wbot.js
+
+linha 351
+
+delay(3000).then(function() {
+ msg.reply("O horário de atendimento é entre " + inicioAtendimento + " e " + terminoAtendimento + ".");
+								
+delay(3000).then(function() {
+msg.reply("Mensagem automática: No momento estamos fora do horário de atendimento. Deixe sua mensagem e em breve entraremos em contato."); /* " + inicioAtendimento + " e " + terminoAtendimento + "."); */
+
+pm2 stop backend
+0
+0
+	
+####################################################################
+no .env do frontend alteramos de 24 horas para tempo infinito e NÂO FECHAR O TICKET A PEDIDO DA CLIENTE.
+APENAS APAGANDO a LINHA ou comentando
+#REACT_APP_HOURS_CLOSE_TICKETS_AUTO = 24
+(caso queia que o ticket feche somente com 7 dias para aumentar histórico da conversa 168 horas)
+
+rebuildar o frontend apos isso
+####################################################################
+Por segurança devemos trocar a senha do "admin"
+padrão do Whaticket admin@whaticket.com de dentro do sistema web. para senha da magnetron padrão 
+A!2756a@Mag
+
+####################################################################
+
+BUG 
+
+Dashboard não sai do quarenta 40.
+
+backend\dist\services\TicketServices\ListTicketsService.js
+const limit = 40;
+Altera para maior que 40  exemplo 10000 ou 90000 (efetuado nos tres clientes) 13/07/2023
+para e starta o back
+
+##############################################################
+1- ALTERAR MAX_CONNECTIONS
+
+(/ETC/MYSQL/...)
+ 
+ max_connections        = 100000
+ 
+pasta mysql.conf.d
+
+2- ALTERAR LIMIT SYSTEMD
+
+(/ETC/SYSTEMD/...)
+
+/etc/systemd/system/multi-user.target.wants/mysql.service
+
+em service acrescenta 
+
+LimitNOFILE=1000000000
+LimiteMEMLOCK=100000000
+sudo systemctl daemon-reload
+
+3- sudo service mysql restart
+
+4- sudo systemctl daemon-reload
+
+5- CRIAR CRON PARA VERIFICAR FALHAS NO MYSQL
+
+sudo mkdir scripts
+
+cd scripts
+
+sudo nano monitor.sh
+
+#!/bin/bash
+
+# Check if MySQL is running
+
+sudo service mysql status > /dev/null 2>&1
+
+# Restart the MySQL service if it's not running.
+
+if [ $? != 0 ]; then
+
+    echo -e "MySQL Service was down. Restarting now...\n"
+
+    sudo service mysql restart
+
+else
+
+    echo -e "MySQL Service is running already. Nothing to do here.\n"
+
+fi
+
+sudo chmod +x monitor.sh
+
+sudo crontab -e
+
+ */30 * * * * /home/deployzdg/scripts/monitor.sh > /dev/null 2>&1    (verifica banco da Maquina e sobe)
+ 0 4 * * * /sbin/shutdown -r +5        (restart da maquina as 4h da manha para liberar memória)
