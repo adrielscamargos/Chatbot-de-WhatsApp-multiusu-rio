@@ -1,0 +1,15 @@
+UTILIZANDO A VARIAVEL NOME DOS CONTATOS DO APARELHO CONECTADO AO MAGNETICKET
+
+
+Olá, {{name}}! Sou o Tron, o assistente virtual da MagnetronTelecomunicações!
+
+Encontre aqui solução perfeita para sua comunicação.
+
+Por favor digite o número correspondente ao assunto:
+
+1 - Suporte Técnico
+2 - Cobrança/Pagamento
+3 - Comercial
+4 - Revenda
+5 - PABX Virtual
+

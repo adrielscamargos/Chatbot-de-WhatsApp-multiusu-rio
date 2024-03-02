@@ -1,0 +1,91 @@
+Disponibilizando múltiplos serviços da sua API na Contabo
+
+
+
+sudo su root
+
+cd
+
+sudo apt-get update && sudo apt-get upgrade
+
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+sudo apt -y install nodejs
+
+sudo apt-get install git-all?
+
+sudo apt-get install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+
+sudo apt-get install libasound2
+
+sudo git clone https://github.com/pedroherpeto/bot-zdg.git
+
+cd bot-zdg
+
+sudo npm install
+
+sudo npm install -g pm2
+
+sudo pm2 start app.js
+
+sudo service apache2 stop ?
+
+sudo apt install nginx
+
+sudo rm /etc/nginx/sites-enabled/default
+
+sudo nano /etc/nginx/sites-available/bubble
+
+?USE O ARQUIVO TXT ANEXO PARA COPIAR A CONFIG DO NGINX, PARA EVITAR LINHAS SALTADAS
+
+?server {
+
+  server_name bubble.zapdasgalaxias.com.br;
+
+  location / {
+
+    proxy_pass http://127.0.0.1:8000;
+
+    proxy_http_version 1.1;
+
+    proxy_set_header Upgrade $http_upgrade;
+
+    proxy_set_header Connection 'upgrade';
+
+    proxy_set_header Host $host;
+
+    proxy_set_header X-Real-IP $remote_addr;
+
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    proxy_cache_bypass $http_upgrade;
+
+  }
+
+   }
+
+ln -s /etc/nginx/sites-available/bubble /etc/nginx/sites-enabled
+
+sudo nginx -t
+
+sudo service nginx restart
+
+sudo service apache2 stop (no caso do comando anterior falhar)
+
+sudo service nginx restart??
+
+sudo apt-get install snapd
+
+sudo snap install notes
+
+sudo snap install --classic certbot
+
+sudo certbot --nginx
+
+DEBUG CERTBOT: caso você tenha redirecionado o serviço da porta 8000 para 80, como na aula anterior, desfaça essa configuração com os comandos abaixo.
+
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 80
+
+sudo iptables -t nat -I OUTPUT -p tcp -o lo --dport 80 -j REDIRECT --to-ports 80

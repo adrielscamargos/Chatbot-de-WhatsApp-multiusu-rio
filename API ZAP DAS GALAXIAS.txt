@@ -1,0 +1,123 @@
+Instalando sua APi no Contabo?
+
+INSTRUÇÕES BÁSICAS:
+
+Contratar a VPS do Contabo: https://contabo.com/en/?
+DOWNLOAD GIT: https://git-scm.com/download/win
+INICIAR O GIT BASH E CONECTAR NA VPS
+ssh root@ip.ip.ip
+?
+APOIO VÍDEO INSTÂNCIA ÚNICA
+
+sudo yum update
+sudo yum install curl dirmngr apt-transport-https lsb-release ca-certificates && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt -y install nodejs
+sudo apt-get install git-all
+sudo yum install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+sudo apt-get install libasound2
+git clone https://github.com/pedroherpeto/bot-zdg
+cd bot-zdg
+npm install
+npm start 
+
+
+COLOCAR NO BACKGROUND DO UBUNTU? E REDIRECIONAR A PORTA 8000
+ZAP DAS GALAXIAS PEDRINHO DA NASA
+
+
+sudo npm install pm2@latest -g
+pm2 start app.js
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+sudo iptables -t nat -I OUTPUT -p tcp -o lo --dport 80 -j REDIRECT --to-ports 8000      
+??
+(essa rota do IPtables muda o direcionamento da porta 80 para porta 8000 por trás sem usuario perceber)
+
+
+
+APOIO VÍDEO MÚLTIPLA INSTÂNCIA
+
+sudo apt update
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt -y install nodejs
+sudo apt-get install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+sudo apt-get install libasound2
+git clone https://github.com/pedroherpeto/whatsapp-api-zdg.git
+cd whatsapp-api-zdg
+npm install
+npm start
+
+
+COLOCAR NO BACKGROUND DO UBUNTU? E REDIRECIONAR A PORTA 8000
+
+sudo npm install pm2
+pm2 start app.js
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+sudo iptables -t nat -I OUTPUT -p tcp -o lo --dport 80 -j REDIRECT --to-ports 8000?
+
+
+(para continuar rodando _
+nohup node app.js > /dev/null 2>& 1 &
+
+pm2 list   (mostra o que esta rodando)
+
+CTROL + C   para a aplicação node
+
+
+clonar no cmd do windows o 
+
+https://github.com/ngekoding/whatsapp-api-tutorial
+
+cd ..
+cd ..
+git clone https://github.com/ngekoding/whatsapp-api-tutorial
+
+apaga arquivo app.js 
+e renomeia o arqvuio multiplos devices 
+e troca por app.js
+
+acessa o packeg,json e edita 
+nomes do autor 
+e da aplicação de whatsap-api
+para 
+whatsapp-api-tutorial
+
+auo pedor herpert
+apaga a pasta git que esta oculta
+
+renomeia a pasta whats tutorial para whatsapp-api-tutorial
+
+
+com programa GIT CMD no windows acessamos a pasta para subila no github
+
+git init 
+
+git add .
+
+(utiliza ate 4 instanacias de whatsaapp)
+
+
+ou subir no github manualmente
+
+acessaqndo a VM na pasta opt desligando pm2 e os processo da porta 8000 
+para rodar outro novamente
+
+pm2 stop app
+
+
+git clone https://github.com/adrielscamargos/whatsap-api-zdg.git
+
+
+
+cd whatsap-api-zdg
+
+
+npm install 
+npm start
+
+npm install whatsapp-web.js
+
+
+ao gerar erro instalamos 
+
+npm install formatter
+

@@ -1,0 +1,8 @@
+su deploy
+cd /home/deploy/whaticket/backend/
+
+npm r whatsapp-web.js
+npm i whatsapp-web.js
+
+pm2 stop 0 
+pm2 start
