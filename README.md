@@ -1,8 +1,7 @@
 
 
 
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/36444794-87ca-4779-b87d-45bea93ced36
-
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/c53cb706-50bd-4be7-b0e1-3cdd7c2351fa
 
 
 Alterado por Adriel Silva Camargos
