@@ -1,12 +1,15 @@
-## SCRIPT BASH DE INSTALAÇÂO AUTOMATIZADA ##
-![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
+
 ## PAINEL DO MAGNETICKET ##
 ![Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f65d9d6a-1cc5-4a39-ba33-d44be42c881b)
 ## INTERAÇÂO NO WHATSAPP DO USUÀRIO ##
 ![photo_2022-03-18_12-20-33](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fd40b235-9a11-4963-9c3d-89cd479b89df)
 ## LIB DO VENOMBOT RODANDO NO BACK END ##
 ![Projeto venom ok](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/4b6381b2-32a9-4cd0-9dc5-515591b50694)
-
+## SCRIPT BASH DE INSTALAÇÂO AUTOMATIZADA ##
+![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
+## IZING em Produção ##
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/10a1e376-0bd3-4f5a-abef-fe79ddb366a2
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/66a65c7b-3dbb-42de-853d-a60b006a3da5
 
 Alterado por Adriel Silva Camargos
 09/06/2023 ás 17:34
@@ -260,16 +263,5 @@ sudo service nginx restart
 sudo certbot --nginx
 
 ==============================================================
-
-## IZING em Produção
-
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/10a1e376-0bd3-4f5a-abef-fe79ddb366a2
-
-
-
-
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/66a65c7b-3dbb-42de-853d-a60b006a3da5
-
-
 
 
