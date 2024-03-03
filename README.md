@@ -272,3 +272,16 @@ sudo service nginx restart
 sudo certbot --nginx
 
 ==============================================================
+
+## IZING em Produção
+
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/10a1e376-0bd3-4f5a-abef-fe79ddb366a2
+
+
+
+
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/66a65c7b-3dbb-42de-853d-a60b006a3da5
+
+
+
+
