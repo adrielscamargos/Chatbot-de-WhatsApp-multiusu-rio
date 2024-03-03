@@ -1,4 +1,20 @@
 
+![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
+![Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f65d9d6a-1cc5-4a39-ba33-d44be42c881b)
+![Magneticket (2)](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/de64426d-66b1-4854-829d-6ba5a660652e)
+![photo_2022-03-18_12-20-33](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fd40b235-9a11-4963-9c3d-89cd479b89df)
+![Projeto venom ok](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/79f01e00-0971-4591-9379-220460a489c3)
+![MAGNETICKET NOTIFICAÇÂO](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/b56d655e-33b3-4621-a5f0-4acc0f940dc7)
+![Login pelo celular no Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/c104e276-f5be-4b53-ac49-4759ab784dd3)
+![Magneticket-site](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f26c4277-624e-48f8-b133-c63b53db8748)
+![Magneticket-site (2)](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/a141fbbe-7c20-4759-a529-4f2c1bb46049)
+![transferencia de ticket no Magneticket 2 0](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/622dffa7-0d06-4a15-b154-38184c0587dd)
+![Tela do whaticket 1](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/efabe5c7-4948-450b-bfa9-be05f09e8db4)
+![NOVO MAGNETICKET OK COM TAGS E MENU LATERAL com novas APIS](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/9a41956a-2de9-4376-9359-864043f939da)
+![Magneticket conversando pelo celular no painel web](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/3124bc06-43d6-4a46-9d94-29d74f48b37b)
+![Atendimento de chatbot da Magnetron mensagem com nome do usuário](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/42beb88e-18d8-47ba-a9d6-1d4e9de2c869)
+![chat3](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/014dd916-d650-424c-9d17-abed2d66db10)
+![Quantidade de usuários acessando sistema criados pelo admin](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/a9a2cab6-e211-4284-8a94-9c92f50db2c7)
 
 
 https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/c53cb706-50bd-4be7-b0e1-3cdd7c2351fa
