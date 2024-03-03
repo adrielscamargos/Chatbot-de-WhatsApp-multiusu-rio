@@ -1,3 +1,10 @@
+
+
+
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/36444794-87ca-4779-b87d-45bea93ced36
+
+
+
 Alterado por Adriel Silva Camargos
 09/06/2023 ás 17:34
 
