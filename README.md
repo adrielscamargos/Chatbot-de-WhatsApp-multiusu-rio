@@ -5,14 +5,7 @@
 ## INTERAÇÂO NO WHATSAPP DO USUÀRIO ##
 ![photo_2022-03-18_12-20-33](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fd40b235-9a11-4963-9c3d-89cd479b89df)
 ## LIB DO VENOMBOT RODANDO NO BACK END ##
-![transferencia de ticket no Magneticket 2 0](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/622dffa7-0d06-4a15-b154-38184c0587dd)
-![Tela do whaticket 1](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/efabe5c7-4948-450b-bfa9-be05f09e8db4)
-![NOVO MAGNETICKET OK COM TAGS E MENU LATERAL com novas APIS](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/9a41956a-2de9-4376-9359-864043f939da)
-![Magneticket conversando pelo celular no painel web](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/3124bc06-43d6-4a46-9d94-29d74f48b37b)
-
-
-
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/c53cb706-50bd-4be7-b0e1-3cdd7c2351fa
+![Projeto venom ok](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/4b6381b2-32a9-4cd0-9dc5-515591b50694)
 
 
 Alterado por Adriel Silva Camargos
