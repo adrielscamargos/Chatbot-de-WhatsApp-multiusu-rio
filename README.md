@@ -8,8 +8,14 @@
 ## SCRIPT BASH DE INSTALAÇÂO AUTOMATIZADA ##
 ![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
 ## IZING em Produção ##
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/10a1e376-0bd3-4f5a-abef-fe79ddb366a2
-https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/66a65c7b-3dbb-42de-853d-a60b006a3da5
+
+
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/09e5e62f-cce8-4e8c-8564-a0c7ad3b1e7b
+
+
+
+https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f080b97b-e370-4039-a725-ab885ed232d2
+
 
 Alterado por Adriel Silva Camargos
 09/06/2023 ás 17:34
