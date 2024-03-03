@@ -1,4 +1,4 @@
-## SCRIPT BASH D EINSTALAÇÂO AUTOMATIZADA ##
+## SCRIPT BASH DE INSTALAÇÂO AUTOMATIZADA ##
 ![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
 ## PAINEL DO MAGNETICKET ##
 ![Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f65d9d6a-1cc5-4a39-ba33-d44be42c881b)
