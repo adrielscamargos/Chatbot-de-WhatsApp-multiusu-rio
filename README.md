@@ -2,8 +2,9 @@
 ![SCRIPT nuvem OK Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fbdcd389-8f69-4912-884f-ee4b56739e89)
 ## PAINEL DO MAGNETICKET ##
 ![Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/f65d9d6a-1cc5-4a39-ba33-d44be42c881b)
-![Magneticket (2)](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/de64426d-66b1-4854-829d-6ba5a660652e)
+## INTERAÇÂO NO WHATSAPP DO USUÀRIO ##
 ![photo_2022-03-18_12-20-33](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/fd40b235-9a11-4963-9c3d-89cd479b89df)
+## LIB DO VENOMBOT RODANDO NO BACK END ##
 ![Projeto venom ok](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/79f01e00-0971-4591-9379-220460a489c3)
 ![MAGNETICKET NOTIFICAÇÂO](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/b56d655e-33b3-4621-a5f0-4acc0f940dc7)
 ![Login pelo celular no Magneticket](https://github.com/adrielscamargos/Chatbot-de-WhatsApp-multiusu-rio/assets/34457423/c104e276-f5be-4b53-ac49-4759ab784dd3)
